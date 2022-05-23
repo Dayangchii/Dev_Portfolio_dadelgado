@@ -9,11 +9,17 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+@media screen and (max-width: 1000px) {
+  section{
+      flex-direction: column;
+  }   
+}
 
 body {
-    margin: 0;
-    height: 2000px;
+    margin: 10;
+    line-height: -96;
     background-color: whitesmoke;
+    ;
 }
 
 p{
@@ -68,7 +74,11 @@ a:hover {
 }
 
 body {
+  display:block;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color:orange;
 }
 
 nav {
@@ -80,7 +90,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 3.5rem;
-  margin: 5px;
+  margin: 10;
   background-color: white;
   box-shadow: 0 3px 3px rgba(138, 35, 35, 0.1);
 
@@ -104,9 +114,12 @@ nav ul {
 }
 
 nav ul li {
+  font-size: smaller;
   font-weight: 200;
 }
-
+nav a:hover{
+  color: orange;
+}
 h1{
   color: #ffae22;
   font-weight: 350;
@@ -177,6 +190,7 @@ h1{
   width:200px;
   z-index: 1000;
 }
+
 .sticky li{
   list-style-type:none;
   background-color:white;
