@@ -9,33 +9,39 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  height: 100vh;
-  background-color: #fcf4eb;
+    margin: 0;
+    height: 2000px;
+    background-color: whitesmoke;
 }
 
-p {
-  color: black;
-  font-size: medium;
+p{
+color: black;
+font-size: medium;
 }
 
-.me {
-  color: #e69138;
-  ;
+.me{
+color:#ffae22
 }
 
-.project {
-  color: #ffae22;
+.project{
+color:#ffae22;
 }
 
-.skill {
-  color: #ffae22;
+.skill{
+color:#ffae22;
 }
 
-.footer2 {
-  color: #e69138;
+.ffff{
+color:#ffae22;
+}
+.icon-bar{
+position: fixed;
+top: 50%;
+-webkit-transform: translate(50%);
+-ms-transform: translateY(-50%);
+transform: translateY(50%);
 }
 
 html {
@@ -43,6 +49,8 @@ html {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -59,6 +67,10 @@ a:hover {
   color: black;
 }
 
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -68,25 +80,22 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 3.5rem;
-  margin: 6px;
-  background-color: #fcf4eb;
+  margin: 5px;
+  background-color: white;
   box-shadow: 0 3px 3px rgba(138, 35, 35, 0.1);
+
 }
 
-img {
-  width: 8%;
+.sidebar{
+  position: right;
 }
+
 nav h1 {
   color: black;
 }
 
 nav a {
   color: black;
-}
-
-nav a:hover {
-  color: #ffae22;
-  border-bottom: 2px solid;
 }
 
 nav ul {
@@ -98,42 +107,13 @@ nav ul li {
   font-weight: 200;
 }
 
-h1 {
+h1{
   color: #ffae22;
   font-weight: 350;
   position: center;
 }
 
-
-.sticky {
-  position: sticky;
-  padding: 0px;
-  margin: 0px;
-  right: -90px;
-  top: 200px;
-  width: 200px;
-  z-index: 1000;
-}
-
-.sticky li {
-  list-style-type: none;
-  background-color: white;
-  color: black;
-  height: 43px;
-  width: 0;
-  padding: 0px;
-  margin: 0px 0px 1px 0px;
-  border-radius: 7%;
-  position: right;
-}
-
-.sticky li img {
-  float: left;
-  margin: 5px 4px;
-  margin-right: 5px;
-}
-
-.greetings {
+.greetings{
   font-size: larger;
   display: block;
   text-align: center;
@@ -141,13 +121,14 @@ h1 {
   padding: 1.5rem 3.5rem;
   margin: 60px;
   margin-top: 10px;
+ 
 }
 
-.HI {
-  color: black;
+.HI{
+  color:#ffae22;
 }
 
-.project {
+.project{
   font-size: larger;
   display: block;
   text-align: center;
@@ -155,37 +136,73 @@ h1 {
   padding: 1.5rem 3.5rem;
   margin: 60px;
   margin-top: 10px;
-  box-shadow: 0 5px 5px rgba(6, 6, 6, 0.1);
-
+  
 }
 
-.software-skills {
+.skills{
+  color: #ffae22;
   font-size: larger;
   display: block;
   text-align: center;
   height: 500px;
   padding: 1.5rem 1.5rem;
   margin: 60px;
-  box-shadow: 0 15px 5px rgba(6, 6, 6, 0.1);
+}
+.About{
+    text-align-last: center;
+    text-align: justify;
+    font-weight: 50;
+    text-align: center;
+    height: 500px;
+    padding: 1.5rem 1.5rem;
+    margin: 60px;
 }
 
-.About {
-  text-align-last: center;
-  text-align: justify;
-  font-weight: 50;
-  text-align: center;
-  height: 500px;
-  padding: 1.5rem 1.5rem;
-  margin: 60px;
-}
-
-.footer {
-  font-family: "Roboto", sans-serif;
-  font-size: 100px;
-  font-weight: lighter;
+.footer{
+  font-size: small;
   text-align: center;
   color: black;
   height: 35px;
   padding: 3.5rem 1.5rem;
   margin: 60px;
+
+}
+
+.sticky-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:-90px;
+  top: 200px;
+  width:200px;
+  z-index: 1000;
+}
+.sticky li{
+  list-style-type:none;
+  background-color:white;
+  color:black;
+  height:43px;
+  width: 0;
+  padding:0px;
+  margin:0px 0px 1px 0px;
+  border-radius: 7%;
+}
+
+.sticky li img{
+float:left;
+margin:5px 4px;
+margin-right:5px;
+}
+.sticky li p{
+padding-top:5px;
+margin:0px;
+line-height:16px;
+font-size:11px;
+}
+.sticky li p a{
+text-decoration:none;
+color:black;
+}
+.sticky li p a:hover{
+  color: #ffae22;
 }
