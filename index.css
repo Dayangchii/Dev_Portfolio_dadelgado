@@ -80,12 +80,13 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 3.5rem;
-  margin: 5px;
+  margin: 6px;
   background-color: #fcf4eb;
   box-shadow: 0 3px 3px rgba(138, 35, 35, 0.1);
 }
+
 img {
-  width: 100%;
+  width: 8%;
 }
 nav h1 {
   color: black;
