@@ -9,10 +9,10 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
-  height: 2000px;
+  height: 100vh;
   background-color: #fcf4eb;
 }
 
@@ -34,16 +34,8 @@ p {
   color: #ffae22;
 }
 
-.ffff {
+.footer2 {
   color: #e69138;
-}
-
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translate(50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(50%);
 }
 
 html {
@@ -65,10 +57,6 @@ a {
 
 a:hover {
   color: black;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -116,6 +104,35 @@ h1 {
   position: center;
 }
 
+
+.sticky {
+  position: sticky;
+  padding: 0px;
+  margin: 0px;
+  right: -90px;
+  top: 200px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.sticky li {
+  list-style-type: none;
+  background-color: white;
+  color: black;
+  height: 43px;
+  width: 0;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  border-radius: 7%;
+  position: right;
+}
+
+.sticky li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px;
+}
+
 .greetings {
   font-size: larger;
   display: block;
@@ -142,7 +159,7 @@ h1 {
 
 }
 
-.skills {
+.software-skills {
   font-size: larger;
   display: block;
   text-align: center;
@@ -171,47 +188,4 @@ h1 {
   height: 35px;
   padding: 3.5rem 1.5rem;
   margin: 60px;
-}
-
-.sidebar {
-  padding: 0px;
-  margin: 0px;
-  position: fixed;
-  right: -90px;
-  top: 200px;
-  width: 200px;
-  z-index: 1000;
-}
-
-.sticky li {
-  list-style-type: none;
-  background-color: white;
-  color: black;
-  height: 43px;
-  width: 0;
-  padding: 0px;
-  margin: 0px 0px 1px 0px;
-  border-radius: 7%;
-}
-
-.sticky li img {
-  float: left;
-  margin: 5px 4px;
-  margin-right: 5px;
-}
-
-.sticky li p {
-  padding-top: 5px;
-  margin: 0px;
-  line-height: 16px;
-  font-size: 11px;
-}
-
-.sticky li p a {
-  text-decoration: none;
-  color: black;
-}
-
-.sticky li p a:hover {
-  color: #ffae22;
 }
